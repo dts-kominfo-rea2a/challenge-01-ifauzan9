@@ -47,7 +47,11 @@ filterFavoriteColor.add(firstUser.favoriteColor[1]);
 filterFavoriteColor.add(firstUser.favoriteColor[2]);
 filterFavoriteColor.add(firstUser.favoriteColor[3]);
 // replace hasil filter favorite color ke firstUser.favoriteColor
-firstUser.favoriteColor = filterFavoriteColor;
+let newFavoriteColor = [];
+for (let item of filterFavoriteColor) {
+  newFavoriteColor.push(item);
+}
+firstUser.favoriteColor = newFavoriteColor;
 // -----------------------------------------------------------
 
 //------ filter nama restaurant (menghilangkan duplikat) ------------
@@ -64,7 +68,11 @@ filterRestaurant.add(firstUser.favoriteRestaurant[8]);
 filterRestaurant.add(firstUser.favoriteRestaurant[9]);
 filterRestaurant.add(firstUser.favoriteRestaurant[10]);
 // replace hasil filter ke firstUser.favoriteRestaurant
-firstUser.favoriteRestaurant = filterRestaurant;
+let newFavoriteRestaurant = [];
+for (let item of filterRestaurant) {
+  newFavoriteRestaurant.push(item);
+}
+firstUser.favoriteRestaurant = newFavoriteRestaurant;
 // =-----------------------------------------------------------------------
 
 const secondUser = {
@@ -114,7 +122,11 @@ const filterFavoriteColor2 = new Set();
 filterFavoriteColor2.add(secondUser.favoriteColor[0]);
 filterFavoriteColor2.add(secondUser.favoriteColor[1]);
 filterFavoriteColor2.add(secondUser.favoriteColor[2]);
-secondUser.favoriteColor = filterFavoriteColor2;
+let newFavoriteColor2 = [];
+for (let item of filterFavoriteColor2) {
+  newFavoriteColor2.push(item);
+}
+secondUser.favoriteColor = newFavoriteColor2;
 // -----------------------------------------------
 
 // ---------------- Filter Restaurant Food----------
@@ -128,7 +140,11 @@ filterRestaurant2.add(secondUser.favoriteRestaurant[5]);
 filterRestaurant2.add(secondUser.favoriteRestaurant[6]);
 filterRestaurant2.add(secondUser.favoriteRestaurant[7]);
 filterRestaurant2.add(secondUser.favoriteRestaurant[8]);
-secondUser.favoriteRestaurant = filterRestaurant2;
+let newFavoriteRestaurant2 = [];
+for (let item of filterRestaurant2) {
+  newFavoriteRestaurant2.push(item);
+}
+secondUser.favoriteRestaurant = newFavoriteRestaurant2;
 // -------------------------------------------------
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
